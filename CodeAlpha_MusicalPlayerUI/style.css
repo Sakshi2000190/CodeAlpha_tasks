@@ -1,0 +1,87 @@
+body {
+    margin-top: 40px;
+    height: 100%;
+    background: linear-gradient(135deg, #1db954, #121212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+
+}
+
+.player {
+    width: 500px;
+    background: #181818;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+}
+
+
+#cover{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: block;
+    background-color: #000;
+}
+#artist {
+    color: #b3b3b3;
+    font-size: 20px;
+}
+
+.controls {
+    margin: 15px 0;
+}
+
+.controls button {
+    font-size: 22px;
+    margin: 0 10px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    color: #1db954;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.volume{
+    margin-top: 15px;
+}
+
+.playlist {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.playlist div {
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.playlist div:hover {
+    background: #333;
+}
+
+.playlist .active {
+    background: #1db954;
+}

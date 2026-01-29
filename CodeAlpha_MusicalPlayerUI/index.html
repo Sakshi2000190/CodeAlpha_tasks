@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="player">
+    <div class="container">
+      <img src="./images/lion.webp" id="cover">
+      <h2 id="title">Song Title</h2>
+      <h2 id="artist">Artist Name</h2>
+      <audio id="audio"></audio>
+
+      <!-- Progress Bar -->
+      <input type="range" name="" id="progress" value="0">
+      <div class="time">
+        <span id="currentTime">0:00</span>
+        <span id="duration">0:00</span>
+      </div>
+
+      <!-- Controls -->
+      <div class="control">
+        <button onclick="prevSong()">⏭</button>
+        <button onclick="playPause()">▶
+
+        </button>
+        <button onclick="nextSong()">⏭</button>
+
+      </div>
+
+      <!-- Volume -->
+       <div class="volume">
+      <label for="">Volume</label>
+      <input type="range" name="" id="volume" min="0" max="1" step="0.01" value="0.5">
+        </div>
+    </div>
+
+    <div class="songList">
+      <!-- playlist -->
+      <div class="playlist" id="playlist">
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
